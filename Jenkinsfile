@@ -8,5 +8,12 @@ pipeline {
                 echo 'not using shell in the Jenkinsfile'
             }
         }
+       stage('test') {
+            steps {
+                echo "This is test file"
+                sh 'echo using shell within Jenkinsfile-2nd'
+                echo 'not using shell in the Jenkinsfile-3rd'
+            }
+        }
     }
 }
